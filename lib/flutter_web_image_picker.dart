@@ -2,6 +2,7 @@ library optimum_flutter_web_image_picker;
 
 import 'dart:convert';
 import 'dart:typed_data';
+import 'dart:typed_data';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -46,4 +47,13 @@ class FlutterWebImagePicker {
     _webImageInfo.data = base64.decode(data['data']);
     return _webImageInfo;
   }
+}
+
+
+class WebImageInfo{
+  String fileName;
+  String filePath;
+  String base64;
+  String base64WithScheme;
+  Uint8List data;
 }
