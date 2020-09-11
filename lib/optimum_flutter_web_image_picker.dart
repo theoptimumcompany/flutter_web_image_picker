@@ -1,4 +1,4 @@
-library flutter_web_image_picker;
+library optimum_flutter_web_image_picker;
 
 import 'dart:convert';
 import 'dart:typed_data';
@@ -10,7 +10,7 @@ import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'src/web_image_picker.dart';
 import 'src/bean/web_image_info.dart';
 
-class FlutterWebImagePicker {
+class OptimumFlutterWebImagePicker {
   static void registerWith(Registrar registrar) {
     final channel = MethodChannel('flutter_web_image_picker',
         const StandardMethodCodec(), registrar.messenger);
