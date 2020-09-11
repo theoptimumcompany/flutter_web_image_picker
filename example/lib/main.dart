@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_image_picker/optimum_flutter_web_image_picker.dart';
+import 'package:flutter_web_image_picker/flutter_web_image_picker.dart';
 
 void main() {
   runApp(App());
@@ -34,7 +34,7 @@ class _ImagePickerPageState extends State<ImagePickerPage> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.open_in_browser),
         onPressed: () async {
-          final _image = await OptimumFlutterWebImagePicker.getImage;
+          final _image = await FlutterWebImagePicker.getImage;
           setState(() {
             image = _image;
           });
